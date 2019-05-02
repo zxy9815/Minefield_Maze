@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundv6">
+
+    <LinearLayout
+        android:id="@+id/Activity_Login_Lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="Account："
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Activity_Login_Number"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Activity_Login_Lin1"
+            android:layout_alignTop="@+id/Activity_Login_Lin1"
+            android:layout_alignEnd="@+id/Activity_Login_Lin1"
+            android:layout_weight="1"
+            android:digits="1234567890qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:hint="Enter Username" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Activity_Login_Lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Activity_Login_Lin1"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:text="Password："
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Activity_Login_Password"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/Activity_Login_Chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Activity_Login_Lin2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:checked="true"
+        android:text="remember the password"/>
+
+    <ImageButton
+        android:id="@+id/Activity_Login_Login"
+        android:layout_width="339dp"
+        android:layout_height="95dp"
+        android:layout_below="@+id/Activity_Login_Lin2"
+        android:layout_alignEnd="@+id/Activity_Login_Lin2"
+        android:layout_alignRight="@+id/Activity_Login_Lin2"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@null"
+        android:src="@drawable/finalbuttonlogin" />
+
+    <ImageButton
+        android:id="@+id/register"
+        android:layout_width="352dp"
+        android:layout_height="97dp"
+        android:layout_below="@+id/Activity_Login_Login"
+        android:layout_alignEnd="@+id/Activity_Login_Login"
+        android:layout_alignRight="@+id/Activity_Login_Login"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="-6dp"
+        android:background="@null"
+        android:layout_marginRight="-6dp"
+        android:src="@drawable/finalbuttonregister" />
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundv4"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/levelButtonONE"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="80dp"
+        android:background="@null"
+        android:src="@drawable/levelone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/levelButtonTWO"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@null"
+        android:src="@drawable/leveltwo"
+        app:layout_constraintStart_toEndOf="@+id/levelButtonONE"
+        app:layout_constraintTop_toTopOf="@+id/levelButtonONE" />
+
+    <ImageButton
+        android:id="@+id/levelButtonTHREE"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:background="@null"
+        android:src="@drawable/levelthree"
+        app:layout_constraintStart_toEndOf="@+id/levelButtonTWO"
+        app:layout_constraintTop_toTopOf="@+id/levelButtonTWO" />
+
+    <ImageButton
+        android:id="@+id/levelButtonFOUR"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:src="@drawable/levelfour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelButtonONE" />
+
+    <ImageButton
+        android:id="@+id/levelButtonFIVE"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@null"
+        android:src="@drawable/levelfive"
+        app:layout_constraintStart_toEndOf="@+id/levelButtonFOUR"
+        app:layout_constraintTop_toTopOf="@+id/levelButtonFOUR" />
+
+    <ImageButton
+        android:id="@+id/levelButtonSIX"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@null"
+        android:src="@drawable/levelsix"
+        app:layout_constraintStart_toEndOf="@+id/levelButtonFIVE"
+        app:layout_constraintTop_toTopOf="@+id/levelButtonFIVE" />
+
+    <ImageButton
+        android:id="@+id/levelButtonSEVEN"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:src="@drawable/levelseven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelButtonFOUR" />
+
+    <ImageButton
+        android:id="@+id/levelButtonEIGHT"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@null"
+        android:src="@drawable/leveleight"
+        app:layout_constraintStart_toEndOf="@+id/levelButtonSEVEN"
+        app:layout_constraintTop_toTopOf="@+id/levelButtonSEVEN" />
+
+    <ImageButton
+        android:id="@+id/levelButtonNINE"
+        android:layout_width="128dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/levelButtonEIGHT"
+        app:layout_constraintTop_toTopOf="@+id/levelButtonEIGHT"
+        android:src="@drawable/levelnine" />
+
+    <ImageButton
+        android:id="@+id/levelsButtonHOME"
+        android:layout_width="320dp"
+        android:layout_height="101dp"
+        android:background="@null"
+        android:src="@drawable/finalbuttonhome"
+        app:layout_constraintEnd_toEndOf="@+id/levelsButtonRANDOM"
+        app:layout_constraintTop_toBottomOf="@+id/levelsButtonRANDOM" />
+
+    <ImageButton
+        android:id="@+id/levelsButtonRANDOM"
+        android:layout_width="320dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginRight="61dp"
+        android:background="@null"
+        android:src="@drawable/finalbuttonrandom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
