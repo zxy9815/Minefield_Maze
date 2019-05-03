@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 
 
 /**
- *
+ * This class uses sharedpreferences to store key values: string, bool and int according to context
  */
 public class SpUtils {
 

@@ -74,6 +74,7 @@ public class LevelsScreen extends Activity implements OnClickListener {
 
         } else {
             Intent gameIntent;
+            //if getExtra returns 1, user clicked on LEADER, so go to list_Activity
             if (type == 1)
                 gameIntent = new Intent(v.getContext(), List_Activity.class);
             else

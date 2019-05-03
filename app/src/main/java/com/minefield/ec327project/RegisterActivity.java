@@ -43,15 +43,17 @@ public class RegisterActivity extends BaseActivity {
                 String phone = mPhone.getText().toString().trim();
                 String pass = mPass.getText().toString().trim();
                 String pass_again = mAgainPass.getText().toString().trim();
+                //check if any field is empty
                 if (phone.isEmpty() || pass.isEmpty() || pass_again.isEmpty()) {
                     Utils.showToast("The message cannot be empty!");
                     return;
                 }
-
+                //check if two fields of password matches
                 if (!pass.equals(pass_again)) {
                     Utils.showToast("The passwords do not match!");
                     return;
                 }
+                //start checking username and password in firebase
                 userExists(phone, pass);
             }
         });
@@ -67,10 +69,12 @@ public class RegisterActivity extends BaseActivity {
                 for (int i = 0; i < queryDocumentSnapshots.getDocuments().size(); i++) {
                     Log.e("yxs", "Data：" + queryDocumentSnapshots.getDocuments().get(i).get("pass"));
                 }
+                //check if current username exists
                 if (queryDocumentSnapshots.getDocuments().size() != 0) {
                     Utils.showToast("User already exists!");
                     return;
                 }
+                //start adding username and password to firebase
                 AddUser(phone, pass);
             }
         });

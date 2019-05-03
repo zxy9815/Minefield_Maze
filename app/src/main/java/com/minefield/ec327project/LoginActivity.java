@@ -51,10 +51,12 @@ public class LoginActivity extends BaseActivity {
                 SpUtils.putBoolean("chk", isChecked);
             }
         });
+        //check if remember password checkbox is checked
         if (SpUtils.getBoolean("chk", true)) {
             mNum.setText(SpUtils.getString(StringUtils.PHONE, ""));
             mPass.setText(SpUtils.getString(StringUtils.PASSWORD, ""));
         }
+        //check if user entered phone and password
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,9 +66,11 @@ public class LoginActivity extends BaseActivity {
                     Toast.makeText(LoginActivity.this, "Phone or Password cannot be empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                //start login funtion if all fields entered
                 Login(num, pass);
             }
         });
+        //go to register activity if clicked
         findViewById(R.id.register).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,10 +90,12 @@ public class LoginActivity extends BaseActivity {
                 for (int i = 0; i < queryDocumentSnapshots.getDocuments().size(); i++) {
                     Log.e("yxs", "Looking for data：" + queryDocumentSnapshots.getDocuments().get(i).get("pass"));
                 }
+                //check database if the username exists
                 if (queryDocumentSnapshots.getDocuments().size() == 0) {
                     Utils.showToast("User dose not exists!");
                     return;
                 }
+                //check if password matches the user
                 if (!queryDocumentSnapshots.getDocuments().get(0).get("pass").equals(pass)) {
                     Utils.showToast("Password mistake!");
                     return;

@@ -1,10 +1,7 @@
 package com.minefield.ec327project;
 
 /**
- * Package    : com.example.ec327project
- * ClassName  : UserBean
- * Description: ${TODO}
- *
+ * This class stores current username and password
  */
 //class for user information
 public class UserBean {

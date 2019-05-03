@@ -8,9 +8,7 @@ import butterknife.ButterKnife;
 import butterknife.Unbinder;
 
 /**
- * Package    : com.example.ec327project
- * ClassName  : BaseActivity
- * Description: ${TODO}
+ * This activity initializes variables for current application, activity and also bindview;
  *
  */
 abstract class BaseActivity extends AppCompatActivity {

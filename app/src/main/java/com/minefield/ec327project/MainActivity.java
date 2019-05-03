@@ -7,36 +7,8 @@ import android.view.View.OnClickListener;
 import android.view.View;
 import android.widget.ImageButton;
 
-//import static android.hardware.Sensor.TYPE_LIGHT;
+//This activity includes a PLAY button
 
-
-/**public class main extends AppCompatActivity{
-    private SensorManager sensorManager;
-    private Sensor lightSensor;
-    private SensorEventListener lightEventListener;
-    private View root;
-    private float maxValue;
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState){
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        root = findViewById(R.id.root);
-        sensorManager = (sensorManager) getSystemService(SENSOR_SERVICE);
-        lightSensor = sensorManager.getDefaultSensor(TYPE_LIGHT);
-
-        if (lightSensor == null){
-            Toast.makeText(this, "No light sensor", Toast.LENGTH_SHORT).show();
-            finish();
-        }
-
-        maxValue = lightSensor.getMaximumRange();
-
-
-    }
-}
-*/
 
 
 public class MainActivity extends Activity implements OnClickListener {

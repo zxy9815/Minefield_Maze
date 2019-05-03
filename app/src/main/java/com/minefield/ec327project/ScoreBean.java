@@ -1,10 +1,7 @@
 package com.minefield.ec327project;
 
 /**
- * Package    : com.example.ec327project
- * ClassName  : ScoreBean
- * Description: ${TODO}
- * Date       : 2019/4/13 14:20
+ * this class stores the current username, level played and score in program
  */
 public class ScoreBean {
     private String phone;

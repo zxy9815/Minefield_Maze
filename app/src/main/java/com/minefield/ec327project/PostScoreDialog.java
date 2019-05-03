@@ -6,10 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 /**
- * Package    : com.example.ec327project
- * ClassName  : PostScoreDialog
- * Description: ${TODO}
- * Date       : 2019/4/13 13:57
+ * This class includes showing a dialog telling user that score is uploaded
  */
 public class PostScoreDialog {
 

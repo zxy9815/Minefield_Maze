@@ -1,10 +1,7 @@
 package com.minefield.ec327project;
 
 /**
- * Package    : com.example.ec327project
- * ClassName  : StringUtils
- * Description: ${TODO}
- * Date       : 2019/4/12 14:08
+ *
  */
 
 //class for strings

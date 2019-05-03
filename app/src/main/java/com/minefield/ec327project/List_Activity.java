@@ -24,6 +24,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
+// This activity is requesting data from firebase and showing our leaderboard
 
 public class List_Activity extends BaseActivity {
     @BindView(R.id.List_Title)
@@ -69,6 +70,7 @@ public class List_Activity extends BaseActivity {
         getList();
     }
 
+    //Requesting data from firebase
     void getList() {
         dialog.progressShow("Loading");
         final List<ScoreBean> list = new ArrayList<>();
@@ -103,7 +105,8 @@ public class List_Activity extends BaseActivity {
                 });
     }
 
-
+    //RecyclerView is used for updating leaderboard
+    //It recycles item_score_list to show items in score_list
     class ListAdapter extends RecyclerView.Adapter<ListAdapter.Holder> {
         private List<ScoreBean> mList;
         private Context         context;

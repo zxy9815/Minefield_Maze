@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Comparator;
 import java.util.Date;
 
-//import com.example.ec327project.ScoreBean;
+// This class is a collection of utility functions needed
 
 
 public class Utils {
